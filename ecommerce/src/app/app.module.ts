@@ -22,7 +22,12 @@ import { MatListModule } from '@angular/material/list';
 import { HeaderComponent } from './components/header/header.component';
 
 import { ProductsHeaderComponent } from './pages/home/components/products-header/products-header.component';
-import { FiltersComponent } from './components/filters/filters.component';
+import { FiltersComponent } from './pages/home/components/filters/filters.component';
+import { ProductBoxComponent } from './pages/home/components/product-box/product-box.component';
+import { CartComponent } from './pages/cart/cart.component';
+import { CartService } from './services/cart.service';
+import { StoreService } from './services/store.service';
+// import { ModelsComponent } from './pages/cart/cart.component';
 
 
 
@@ -34,7 +39,10 @@ import { FiltersComponent } from './components/filters/filters.component';
         HomeComponent,
 
         ProductsHeaderComponent,
-         FiltersComponent
+         FiltersComponent,
+         ProductBoxComponent,
+         CartComponent,
+        //  ModelsComponent
   ],
   imports: [
     BrowserModule,
@@ -55,7 +63,7 @@ import { FiltersComponent } from './components/filters/filters.component';
 
 
   ],
-  providers: [],
+  providers: [CartService, StoreService],
   bootstrap: [AppComponent]
 })
 export class AppModule { }
