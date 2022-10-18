@@ -19,8 +19,10 @@ import { MatBadgeModule  } from '@angular/material/badge';
 import { MatSnackBarModule } from '@angular/material/snack-bar';
 import { MatListModule } from '@angular/material/list';
 
-import { HeaderComponent } from './compnents/header/header.component';
-import { ComponentsComponent } from './pages/components/components.component';
+import { HeaderComponent } from './components/header/header.component';
+
+import { ProductsHeaderComponent } from './pages/home/components/products-header/products-header.component';
+import { FiltersComponent } from './components/filters/filters.component';
 
 
 
@@ -30,7 +32,9 @@ import { ComponentsComponent } from './pages/components/components.component';
 
     HeaderComponent,
         HomeComponent,
-        ComponentsComponent
+
+        ProductsHeaderComponent,
+         FiltersComponent
   ],
   imports: [
     BrowserModule,
